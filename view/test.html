@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Test Form</title>
+</head>
+<body>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <div id="result"></div>
+    <script>document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let result = document.getElementById("result");
+            if (username === "user1" && password === "pass1") {
+                result.innerText = "Login successful";
+            } else {
+                result.innerText = "Invalid credentials";
+            }
+        });</script>
+</body>
+</html>
