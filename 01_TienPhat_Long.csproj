@@ -34,4 +34,10 @@
     <Folder Include="data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MethodLibrary">
+      <HintPath>..\..\btnhommodule02\MethodLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
